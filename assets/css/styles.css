@@ -1,0 +1,9 @@
+/*mantendo o audio da pagina sandbox no topo da tela*/
+audio{
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
