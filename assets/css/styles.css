@@ -72,3 +72,43 @@ picture img {
   font-weight: 400;
   font-style: normal;
 }
+
+/* configurações dos elementos das caixas */
+section {
+  padding: 1rem;
+  border: 1px dashed var(--color-primary); 
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+article {
+  padding: 1rem;
+  background-color: var(--color-bg-light);
+  border-radius: 6px;
+}
+
+aside {
+  background-color: var(--color-white);
+  border-left: 4px solid var(--color-primary); 
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  border-radius: 0 6px 6px 0;
+}
+
+
+footer {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;          
+  flex-wrap: wrap;        
+  gap: 0.75rem;           
+  padding: 0;
+  margin: 0;
+}
