@@ -120,3 +120,173 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+/*css para o icone de login*/
+.btn-login-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem; 
+}
+
+/* Controla o tamanho da imagem do ícone */
+.icon-login {
+  width: 18px;  
+  height: 18px; 
+  object-fit: contain;
+}
+
+
+/*css para o formulario de login*/
+.card-form {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  width: 100%;
+  max-width: 400px; 
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; 
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+
+.botoes {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  flex: 1; 
+}
+
+input[type="reset"] {
+  background-color: var(--color-border);
+  color: var(--color-text-dark);
+}
+
+/*css para as tabelas*/
+.admin-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+
+.btn-logout {
+  background-color: transparent;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.btn-logout:hover {
+  background-color: #d9534f;
+  color: var(--color-white);
+}
+
+/* Estilo da Tabela */
+.tabela-container {
+  border: none; 
+  padding: 0;
+}
+
+.tabela-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabela-usuarios th,
+.tabela-usuarios td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabela-usuarios th {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+  font-weight: bold;
+}
+
+
+.tabela-usuarios tbody tr:nth-child(even) {
+  background-color: #f9fbfb;
+}
+
+.tabela-usuarios tbody tr:hover {
+  background-color: #f0f5f6;
+}
+
+
+.acoes {
+  white-space: nowrap;
+}
+
+.btn-editar,
+.btn-excluir {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-right: 0.3rem;
+  transition: opacity 0.2s ease;
+}
+
+.btn-editar {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-excluir {
+  background-color: #e74c3c;
+  color: var(--color-white);
+}
+
+.btn-editar:hover,
+.btn-excluir:hover {
+  opacity: 0.85;
+}
